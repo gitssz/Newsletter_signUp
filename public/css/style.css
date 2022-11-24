@@ -1,0 +1,125 @@
+body
+{
+    font-size: 1.3rem;
+    background: linear-gradient(90deg,#C7C5F4,#776BCC);
+}
+
+/* h3{
+    color:#4c489d;
+    font-size: 2.1rem;
+    font-weight: bold;
+   position: relative;
+   bottom:30px;
+   display:flex;
+   align-items:center ;
+   justify-content: center;
+} */
+
+.fa-solid{
+    color: #4c489d;
+}
+.container{
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.screen{
+    background:linear-gradient(90deg,#5D54AA,#7C78B8);
+    position:relative;
+    height: 600px;
+    width:380px;
+    box-shadow: 0 0 24px #5c5696;
+    text-align: center;
+    /* border-radius: 7px; */
+}
+
+.screen_content{
+ z-index: 1;
+ position: relative;
+ height: 100%;   
+}
+
+.screen_background{
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+    -webkit-clip-path:inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+}
+
+.screen_background_shape{
+transform: rotate(45deg);
+position:absolute;
+height:555px;
+width:530px;
+background: #fff;
+top:-50px;
+right:120px;
+border-radius: 0 72px 0 0;
+}
+
+.login{
+    width:320px;
+    padding: 30px;
+    padding-top: 120px;
+}
+
+.login_field{
+padding:20px 0;
+position: relative;
+
+}
+.login_input{
+    border:none;
+    border-bottom:2px solid #d1d1d4;
+    background:none;
+    padding:10px;
+    padding-left:24px;
+    font-weight:500;
+    width: 75%;
+    transition: .2s;
+}
+
+.login_input:active,.login_input:focus,.login_input:hover{
+    outline: none;
+    border-bottom-color:#6a679e;
+}
+.login_submit{
+    background: #fff;
+    font-size: 20px;
+margin-top: 30px;
+padding: 15px,25px;
+border-radius: 26px;
+border:1px solid #d4d3e8;
+text-transform: uppercase;
+font-weight:700;
+display: flex;
+align-items:center;
+width:80%;
+color:#4c489d;
+box-shadow: 0 2px 2px #5c5696;
+cursor:pointer;
+transition:2s;
+}
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+.button{
+    margin-left:32px;
+    padding: 8px;
+}
+/* .button:hover{
+    background-color: #C7C5F4;
+} */
+.button_text{
+    padding: 3px;
+}
+
